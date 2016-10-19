@@ -1,6 +1,6 @@
 #!/bin/ksh
 
-set -x
+set -e
 _TMP=$(mktemp -d -p /tmp installruby.XXXXXXXXXX)
 trap "rm -rf ${_TMP}; exit 1" 2 3 9 13 15 ERR
 
