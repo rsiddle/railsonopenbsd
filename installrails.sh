@@ -15,7 +15,7 @@ EOF
 }
 
 # Add OpenBSD packages
-pkg_add ruby%2.3 libiconv node mariadb-server nginx--
+pkg_add ruby%2.3 libiconv node mariadb-server nginx-- cmake
 
 # Add links
 pkg_info -M ruby python | grep '^ ln' | sed 's/ //' > ${_TMP}/run.sh
